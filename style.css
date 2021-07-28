@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  .container {
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -60px 0 0 -360px;
+    display: flex;
+  }
+  .cube {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    background-color: gray;
+    border-radius: 6px;
+    display: flex;
+  }
+  .point {
+    width: 16px;
+    height: 16px;
+    margin: 1px;
+    background-color: black;
+    border-radius: 25px;
+  }
+  .first-cube {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .second-cube,
+  .third-cube {
+    justify-content: space-between;
+  }
+  .cube-22,
+  .cube-333 {
+    align-self: flex-end;
+  }
+  .cube-33 {
+    align-self: center;
+  }
+  .sixth-cube {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+  .fourth-cube {
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  .cube-4 {
+    flex-basis: 74.28571%;
+  }
+  .cube-44 {
+    flex-basis: 25.71429%;
+  }
+  .fifth-cube {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  .cube-55 {
+    flex-basis: 100%;
+  }
+  .cube-55 > .point {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
